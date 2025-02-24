@@ -23,9 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-50`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-950 dark:text-slate-50`}
       >
-        <ThemeProvider attribute="class" defaultTheme="dark">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Navbar />
           {children}
         </ThemeProvider>
@@ -33,3 +33,4 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
