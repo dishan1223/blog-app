@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
-import UserAvatar from './avatar'; // Import with an uppercase name
+import UserAvatar from './avatar';
+import Hamburger from './Hamburger';
 
 const Navbar = () => {
     return (
@@ -15,7 +16,7 @@ const Navbar = () => {
                         <li><Link href={'/blogs'}>Blogs</Link></li>
                     </ul>
                     <UserAvatar /> {/* Use it with an uppercase name */}
-                    
+                    <Hamburger />
                 </div>
             </div>
         </header>
