@@ -16,7 +16,7 @@ const Navbar = () => {
                         <li><Link href={'/blogs'}>Blogs</Link></li>
                     </ul>
                     <UserAvatar /> {/* Use it with an uppercase name */}
-                    <Hamburger />
+                    <Hamburger className="flex md:hidden"/>
                 </div>
             </div>
         </header>

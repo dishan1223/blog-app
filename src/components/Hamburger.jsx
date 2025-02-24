@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils"
-
+import { Menu } from 'lucide-react';
 import {
   Sheet,
   SheetContent,
@@ -9,10 +9,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 
-const Hamburger = () => {
+const Hamburger = ({className}) => {
     return (
+      <div className={cn(className)}>
         <Sheet>
-        <SheetTrigger>Open</SheetTrigger>
+        <SheetTrigger><Menu/></SheetTrigger>
         <SheetContent>
             <SheetHeader>
             <SheetTitle>Are you absolutely sure?</SheetTitle>
@@ -23,6 +24,7 @@ const Hamburger = () => {
         </SheetHeader>
         </SheetContent>
         </Sheet>
+      </div>
 
     )
 }
