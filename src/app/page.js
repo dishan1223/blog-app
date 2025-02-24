@@ -1,101 +1,27 @@
 import Image from "next/image";
-
+import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <MaxWidthWrapper>
+      Anim do irure amet magna magna exercitation non labore Lorem ex sint do commodo mollit. Cupidatat enim enim esse cillum do esse nulla velit quis aliqua. Deserunt laborum fugiat aliquip cupidatat consectetur proident labore mollit ex cupidatat.
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+Culpa velit sint occaecat est cupidatat exercitation cupidatat eiusmod dolor quis nisi mollit. Nulla mollit dolore laborum excepteur eu magna officia sint pariatur commodo proident velit commodo nulla. Nostrud incididunt proident nulla anim sunt aute sunt anim.
+
+In ut eiusmod laboris reprehenderit quis. Exercitation culpa ipsum quis do nisi non enim labore amet duis aute laboris. Sint non aliqua reprehenderit eu duis duis duis eiusmod duis nostrud. Proident veniam anim occaecat velit ex culpa qui cupidatat.
+
+Pariatur anim dolor laborum tempor. Veniam enim ut dolor duis. Aliqua anim aute id laboris labore id nulla elit eu ad esse veniam amet.
+
+Laboris fugiat in dolor nisi fugiat quis velit irure reprehenderit veniam quis deserunt pariatur. Eu duis exercitation irure ipsum ex ipsum consequat. Magna excepteur incididunt deserunt laboris ut ut pariatur aute ea mollit officia labore. Irure nisi reprehenderit enim consequat nostrud amet ea sint nulla ut esse veniam est.
+
+Labore consectetur minim pariatur dolor irure in sunt minim fugiat commodo. Ea duis irure voluptate velit magna sint sit consectetur et sunt laborum. Lorem est laboris aliqua eu nulla exercitation esse fugiat ut. Nostrud magna et anim tempor in quis ea. Eu ad exercitation sit in id deserunt magna ullamco et esse incididunt anim nisi do.
+
+Ad fugiat pariatur amet et consequat nulla consectetur laborum. Exercitation amet aliqua duis nisi anim aliquip sunt consectetur Lorem esse pariatur. Pariatur consequat duis veniam et ad fugiat. Aliqua voluptate cillum minim labore ut voluptate.
+
+Exercitation nisi nostrud do aute aliqua id dolor velit occaecat sunt amet velit proident enim. Exercitation laboris ullamco occaecat incididunt enim exercitation mollit consequat in ipsum nisi laborum laboris. Aliquip culpa mollit pariatur deserunt occaecat voluptate do eu. Ex dolore voluptate id ullamco officia exercitation ullamco. Aute do tempor culpa quis adipisicing ex ad eiusmod nostrud non reprehenderit sint tempor sit.
+
+Aute quis id anim minim incididunt irure dolor sunt et duis. Eiusmod esse duis esse sunt nulla ipsum nisi laboris mollit ad tempor. Veniam pariatur irure elit reprehenderit aliquip ullamco in sint ipsum pariatur. Do est laboris occaecat incididunt laboris non reprehenderit veniam qui.
+
+Officia qui id consectetur nulla aliquip eu magna cillum laborum adipisicing pariatur. Aliquip pariatur pariatur amet tempor ad ea pariatur. Fugiat laboris veniam sunt aliqua consectetur eiusmod. Nostrud dolore proident non et fugiat aliquip enim minim.
+    </MaxWidthWrapper>
   );
 }
