@@ -11,7 +11,7 @@ const Navbar = () => {
                 <div><h1 className='font-bold text-2xl'>BlackBox</h1></div>
                 
                 <div className="flex items-center gap-5">
-                    <ul className='gap-5 hidden md:flex'>
+                    <ul className='gap-5 hidden md:flex md:justify-center md:items-center'>
                         <li><Link href={'/'}>Home</Link></li>
                         <li><Link href={'/blogs'}>Blogs</Link></li>
                         <li><ModeToggle/></li>
