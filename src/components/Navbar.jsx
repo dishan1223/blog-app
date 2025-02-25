@@ -1,11 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
-
+import ModeToggle from "@/components/DarkLightToggle";
 import Hamburger from './Hamburger';
 
 const Navbar = () => {
     return (
-        <header className="w-full h-14 sticky top-0 backdrop-blur-3xl">
+        <header className="w-full h-14 sticky top-0 bg-slate-800/60 backdrop-blur-md">
             <div className='flex justify-between items-center h-full mx-auto w-5/6'>
                 
                 <div><h1 className='font-bold text-2xl'>BlackBox</h1></div>
@@ -14,6 +14,7 @@ const Navbar = () => {
                     <ul className='gap-5 hidden md:flex'>
                         <li><Link href={'/'}>Home</Link></li>
                         <li><Link href={'/blogs'}>Blogs</Link></li>
+                        <li><ModeToggle/></li>
                     </ul>
                     <Hamburger className="flex md:hidden"/>
                 </div>
