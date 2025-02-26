@@ -5,7 +5,7 @@ import Hamburger from './Hamburger';
 
 const Navbar = () => {
     return (
-        <header className="w-full h-14 sticky top-0 bg-slate-800/60 backdrop-blur-md">
+        <header className="w-full h-14 sticky top-0 bg-slate-200/60 dark:bg-slate-800/60 backdrop-blur-md">
             <div className='flex justify-between items-center h-full mx-auto w-5/6'>
                 
                 <div><h1 className='font-bold text-2xl'>BlackBox</h1></div>

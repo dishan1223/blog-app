@@ -16,8 +16,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: siteConfig.title,
+  title: `${siteConfig.title} | ${siteConfig.tagline}`,
   description: siteConfig.description,
+  keywords: siteConfig.keywords.join(", "),
+  author: siteConfig.author,
+  theme: siteConfig.theme,
+  openGraph: {
+    title: siteConfig.title,
+    description: siteConfig.description,
+    url: siteConfig.url,
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
