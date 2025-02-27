@@ -3,7 +3,7 @@ import React from 'react'
 
 const MaxWidthWrapper = ({children}) => {
   return (
-    <div className='mx-auto w-3/4'>
+    <div className='mx-auto w-[736px]'>
         {children}
     </div>
   )

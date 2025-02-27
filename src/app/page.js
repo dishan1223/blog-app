@@ -5,9 +5,11 @@ import { TextAnimate } from "@/components/magicui/text-animate";
 export default function Home() {
   return (
     <MaxWidthWrapper>
-    	<TextAnimate animation="blurInUp" by="character" className="text-bold text-2xl">
-    		Hello, world! This is an animated text
-    	</TextAnimate>
+    	<div className="w-full h-screen flex flex-col mt-8">
+    		lorem ipsum
+    	</div>
    	</MaxWidthWrapper>
   );
 }
+
+

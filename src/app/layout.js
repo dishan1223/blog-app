@@ -11,7 +11,7 @@ import siteConfig from "@/lib/siteConfig";
 const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata = {
-  title: `${siteConfig.title} | ${siteConfig.tagline}`,
+  title: `${siteConfig.title}`,
   description: siteConfig.description,
   keywords: siteConfig.keywords.join(", "),
   author: siteConfig.author,
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${outfit.className} antialiased text-slate-950 dark:text-slate-50`}
+        className={`font-ibm antialiased text-slate-950 dark:text-slate-50`}
       >
         <ThemeProvider attribute="class" 
           defaultTheme="dark" 

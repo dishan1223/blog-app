@@ -5,13 +5,15 @@ import Hamburger from './Hamburger';
 
 const Navbar = () => {
     return (
-        <header className="w-full h-14 sticky top-0 bg-slate-200/60 dark:bg-slate-800/60 backdrop-blur-md">
-            <div className='flex justify-between items-center h-full mx-auto w-5/6'>
+        <header className="w-full py-12 h-14 sticky top-0 border-b border-cyan-400 dark:border-orange-600 backdrop-blur-md">
+            <div className='flex justify-between items-center h-full mx-auto w-[736px]'>
                 
-                <div><h1 className='font-bold text-2xl'>BlackBox</h1></div>
+                <div>
+                    <Link href={' / '}><h1 className='font-bold font-ibm text-2xl test'>BlackBox</h1></Link>
+                </div>
                 
                 <div className="flex items-center gap-5">
-                    <ul className='gap-5 hidden md:flex md:justify-center md:items-center'>
+                    <ul className='gap-5 hidden font-ibm md:flex md:justify-center md:items-center'>
                         <li><Link href={'/'}>Home</Link></li>
                         <li><Link href={'/blogs'}>Blogs</Link></li>
                         <li><ModeToggle/></li>
