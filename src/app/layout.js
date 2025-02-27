@@ -1,4 +1,4 @@
-import { Outfit } from 'next/font/google'
+import { IBM_Plex_Mono } from 'next/font/google'
  
 
 import "./globals.css";
@@ -7,8 +7,14 @@ import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ThemeProvider"
 import siteConfig from "@/lib/siteConfig";
 
-// If loading a variable font, you don't need to specify the font weight
-const outfit = Outfit({ subsets: ['latin'] })
+
+// optimized next fonts
+const plexMono = IBM_Plex_Mono({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-plex-mono",
+});
+
 
 export const metadata = {
   title: `${siteConfig.title}`,
@@ -24,11 +30,13 @@ export const metadata = {
   },
 };
 
+
+// Main layout that will be applied to all the pages
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`font-ibm antialiased text-slate-950 dark:text-slate-50`}
+        className={`${plexMono.className} antialiased text-slate-950 dark:text-slate-50`}
       >
         <ThemeProvider attribute="class" 
           defaultTheme="dark" 
