@@ -1,19 +1,14 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit } from 'next/font/google'
+ 
+
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import { cn } from "@/lib/utils";
 import { ThemeProvider } from "@/components/ThemeProvider"
 import siteConfig from "@/lib/siteConfig";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+// If loading a variable font, you don't need to specify the font weight
+const outfit = Outfit({ subsets: ['latin'] })
 
 export const metadata = {
   title: `${siteConfig.title} | ${siteConfig.tagline}`,
@@ -33,7 +28,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-950 dark:text-slate-50`}
+        className={`${outfit.className} antialiased text-slate-950 dark:text-slate-50`}
       >
         <ThemeProvider attribute="class" 
           defaultTheme="dark" 
