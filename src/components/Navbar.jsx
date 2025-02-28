@@ -18,7 +18,11 @@ const Navbar = () => {
                         <li><Link href={'/blogs'}>Blogs</Link></li>
                         <li><ModeToggle/></li>
                     </ul>
-                    <Hamburger className="flex md:hidden"/>
+                    <div className='md:hidden flex gap-3'>
+                        <ModeToggle/>
+                        <Hamburger className="flex"/>
+                    </div>
+                    
                 </div>
             </div>
         </header>
