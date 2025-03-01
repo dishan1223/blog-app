@@ -122,6 +122,6 @@ html[class="dark"] {
   }
 }
 
-.font-ibm{
-    font-family: "IBM Plex Mono", serif
+.text-white{
+    color: white;
 }

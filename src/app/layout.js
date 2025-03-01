@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${plexMono.className} antialiased text-slate-950 dark:text-slate-50`}
+        className={`${plexMono.className} antialiased dark:bg-[#212737] text-slate-950 dark:text-slate-50`}
       >
         <ThemeProvider attribute="class" 
           defaultTheme="dark" 
