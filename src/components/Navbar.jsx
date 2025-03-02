@@ -9,7 +9,7 @@ const Navbar = () => {
             <div className='flex justify-between items-center h-full mx-auto w-[90%] md:w-[736px]'>
                 
                 <div>
-                    <Link href={' / '}><h1 className='font-bold text-xl'>BlackBox</h1></Link>
+                    <Link href={' / '}><h1 className='font-bold text-xl'>WD Academy</h1></Link>
                 </div>
                 
                 <div className="flex items-center gap-5">
