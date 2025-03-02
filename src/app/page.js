@@ -16,7 +16,15 @@ export default function Home() {
     		<p className="mt-10">Social Links:</p>
     		<Socials/>
     		<Line/>
-    	</div>
+
+
+        <div className="mt-5 flex justify-center items-center text-xl">
+          <h1>Page is under construction</h1>
+        </div>
+        <p className="mt-5 text-center">Contributions are welcome! Feel free to visit my GitHub profile to connect and collaborate.</p>
+    	
+
+      </div>
    	</MaxWidthWrapper>
   );
 }
