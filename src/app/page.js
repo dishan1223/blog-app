@@ -18,7 +18,7 @@ export default function Home() {
     		<Line/>
 
 
-        <div className="mt-5 flex justify-center items-center text-xl">
+        <div className="mt-5 flex justify-center items-center">
           <h1>Page is under construction</h1>
         </div>
         <p className="mt-5 text-center">Contributions are welcome! Feel free to visit my GitHub profile to connect and collaborate.</p>
