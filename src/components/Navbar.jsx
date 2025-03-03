@@ -15,7 +15,7 @@ const Navbar = () => {
                 <div className="flex items-center gap-5">
                     <ul className='gap-5 hidden font-ibm md:flex md:justify-center md:items-center'>
                         <li><Link href={'/'}>Home</Link></li>
-                        <li><Link href={'/blogs'}>Blogs</Link></li>
+                        
                         <li><ModeToggle/></li>
                     </ul>
                     <div className='md:hidden flex gap-3'>

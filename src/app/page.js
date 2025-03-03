@@ -1,10 +1,12 @@
 import Image from "next/image";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Socials from "@/components/Socials"
-import Line from "@/components/Line"
+import Socials from "@/components/Socials";
+import Line from "@/components/Line";
+
 
 export default function Home() {
   return (
+    <div>
     <MaxWidthWrapper>
     	<div className="mt-10">
     		<h1 className="font-bold text-4xl mb-10">WD Academy</h1>
@@ -26,6 +28,7 @@ export default function Home() {
 
       </div>
    	</MaxWidthWrapper>
+    </div>
   );
 }
 
