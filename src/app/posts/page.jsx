@@ -25,9 +25,9 @@ export default function Blogs(){
                                     <h2 className="text-xl md:text-2xl">{post.title}</h2>
                                 </Link>
                             </div>
-                            <div className="flex flex-col md:flex-row gap-2">
+                            <div className="flex flex-row md:flex-row gap-2">
                                 {post.tags.map((tag) => (
-                                    <div className="px-3 py-1 bg-slate-200 rounded-3xl dark:bg-slate-700">{tag}</div>
+                                    <div className="px-3 py-1 text-xs font-bold md:font-normal md:text-sm bg-slate-200 rounded-3xl dark:bg-slate-700">{tag}</div>
                                 ))}
                             </div>
                             <div>
