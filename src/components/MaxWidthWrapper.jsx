@@ -1,9 +1,16 @@
 "use client"
-import React from 'react'
+import React from 'react';
+import { cn } from "@/lib/utils";
 
-const MaxWidthWrapper = ({children}) => {
+// for all the folks using TS
+// interface MaxWidthWrapperProps {
+//   children: React.ReactNode;
+//   className?: string;
+// }
+
+const MaxWidthWrapper = ({children, className}) => {
   return (
-    <div className='mx-auto w-[90%] md:w-[736px] mt-10'>
+    <div className={cn("mx-auto w-[90%] md:w-[736px] mt-10", className)}>
         {children}
     </div>
   )
