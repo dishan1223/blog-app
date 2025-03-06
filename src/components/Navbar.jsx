@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import ModeToggle from "@/components/DarkLightToggle";
 import Hamburger from './Hamburger';
+import siteConfig from "@/lib/siteConfig"
 
 const Navbar = () => {
     return (
@@ -9,7 +10,7 @@ const Navbar = () => {
             <div className='flex justify-between items-center h-full mx-auto w-[90%] md:w-[736px]'>
                 
                 <div>
-                    <Link href={' / '}><h1 className='font-bold text-xl'>WD Academy</h1></Link>
+                    <Link href={' / '}><h1 className='font-bold text-xl'>{siteConfig.title}</h1></Link>
                 </div>
                 
                 <div className="flex items-center gap-5">

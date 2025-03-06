@@ -6,6 +6,8 @@ const siteConfig = {
   keywords: ["Next.js", "Web Development", "React", "Learning", "Projects"],
   url: "https://wdacademy.netlify.app",
   theme: "dark",
+  github: "https://github.com/dishan1223",
+  x: "https://x.com/ishtiaqdishan",
 };
 
 export default siteConfig;
