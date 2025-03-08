@@ -1,6 +1,6 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
-import Link from "next/link";
-import {getPosts} from "@/lib/posts"
+import { Link } from "next-view-transitions";
+import {getPosts} from "@/lib/posts";
 
 export default function Blogs(){
     const posts = getPosts();
@@ -24,7 +24,7 @@ export default function Blogs(){
                             </div>
                             <div className="flex flex-row md:flex-row gap-2">
                                 {post.tags.map((tag) => (
-                                    <div className="px-3 py-1 text-xs font-bold md:font-normal md:text-sm bg-slate-200 rounded-3xl dark:bg-slate-700">{tag}</div>
+                                    <div key={tag} className="px-3 py-1 text-xs font-bold md:font-normal md:text-sm bg-slate-200 rounded-3xl dark:bg-slate-700">{tag}</div>
                                 ))}
                             </div>
                             <div>

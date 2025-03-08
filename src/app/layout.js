@@ -1,5 +1,7 @@
 import { IBM_Plex_Mono } from 'next/font/google'
- 
+
+// https://next-view-transitions.vercel.app/#demo
+import { ViewTransitions } from 'next-view-transitions'
 
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -38,6 +40,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${plexMono.className} antialiased dark:bg-[#212737] text-slate-950 dark:text-slate-50`}
       >
+        <ViewTransitions>
         <ThemeProvider attribute="class" 
           defaultTheme="dark" 
           enableSystem 
@@ -46,6 +49,7 @@ export default function RootLayout({ children }) {
           <Navbar />
           {children}
         </ThemeProvider>
+        </ViewTransitions>
       </body>
     </html>
   );
