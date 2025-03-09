@@ -4,6 +4,7 @@ import {getPosts} from "@/lib/posts";
 
 export default function Blogs(){
     const posts = getPosts();
+    console.log(posts);
 
 	return (
 		<MaxWidthWrapper>
@@ -28,6 +29,7 @@ export default function Blogs(){
                                 ))}
                             </div>
                             <div>
+                                <p className='text-gray-600 italic mb-1 dark:text-[#AEB2BB]'>Author: {post.author}</p>
                                 <p className='text-gray-600 italic mb-3 dark:text-[#AEB2BB]'>Updated: {post.date}</p>
                                 <p>{post.description}</p>
                             </div>

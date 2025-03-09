@@ -18,6 +18,7 @@ export function getPosts() {
         return {
             id,
             title: data.title,
+            author: data.author,
             description: data.description,
             tags: data.tags,
             date: data.date,
@@ -29,3 +30,24 @@ export function getPosts() {
     return posts.sort((a, b) => new Date(b.date) - new Date(a.date));
 }
 
+export function getPostsBySlug(slug) {
+    const fullPath = path.join(postsDirectory, `${slug}.mdx`);
+
+    if (!fs.existsSync(fullPath)) {
+        return null;
+    }
+
+    const fileContents = fs.readFileSync(fullPath, 'utf8');
+
+    const { data, content } = matter(fileContents);
+
+    return {
+        id: slug,
+        title: data.title,
+        author: data.author,
+        description: data.description,
+        tags: data.tags,
+        date: data.date,
+        content,
+    };
+}
