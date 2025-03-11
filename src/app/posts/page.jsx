@@ -4,7 +4,6 @@ import {getPosts} from "@/lib/posts";
 
 export default function Blogs(){
     const posts = getPosts();
-    console.log(posts);
 
 	return (
 		<MaxWidthWrapper>
