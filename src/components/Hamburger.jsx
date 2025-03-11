@@ -26,9 +26,9 @@ const Hamburger = ({className}) => {
                       <Link href='/'>Home</Link>
                     </li>
 
-                    {/*<li className='active:text-cyan-400 dark:active:text-orange-400'>
-                      <Link href='/'>Posts</Link>
-                    </li>*/}
+                    <li className='active:text-cyan-400 dark:active:text-orange-400'>
+                      <Link href='/posts'>Posts</Link>
+                    </li>
                   </ul>
                 </div>
             </SheetDescription>
