@@ -25,6 +25,11 @@ export default async function Page({ params }) {
         allowDangerousHtml: true,
     })
     .use(rehypeStringify)
+    .use(rehypeHighlight)
+    .use(rehypeRaw)
+    .use(remarkFrontmatter)
+    .use(remarkParseFrontmatter);
+    
 
     const filePath = path.join(process.cwd(), 'src/content', `${slug}.mdx`);
     const fileContent = fs.readFileSync(filePath, 'utf-8');
@@ -33,8 +38,7 @@ export default async function Page({ params }) {
 
     return (
         <MaxWidthWrapper>
-            <h1>{slug}</h1>
-            <div dangerouslySetInnerHTML={{ __html: htmlContent }} />
+            <div className="prose dark:prose-invert" dangerouslySetInnerHTML={{ __html: htmlContent }} />
         </MaxWidthWrapper>
     );
 }
