@@ -1,0 +1,60 @@
+---
+title: What_is_Electron
+author: "Ishtiaq Dishan"
+description: "Building Desktop Apps with Web Tech!"
+tags: ["Electron.js","JavaScript"]
+date: "11-03-2025"
+---
+# Electron
+
+Hey there, future app developers! Ever wondered how some of your favorite desktop apps are made? Well, today, we're going to talk about a cool tool called **Electron** that lets you build desktop apps using the same stuff you use to make websites!
+
+## What is Electron?
+
+Imagine you have a website. You can make it look awesome with HTML, style it with CSS, and make it interactive with JavaScript. Now, what if you could take that website and turn it into a real, downloadable application that runs on your computer, just like any other app? That's where Electron comes in!
+
+Electron is like a special container that wraps your website and lets it run as a desktop app. It uses:
+
+* **Chromium:** The same engine that powers Google Chrome, so your web app looks and works great.
+* **Node.js:** A way to use JavaScript to do things outside of a web browser, like accessing files on your computer.
+
+Basically, Electron lets you use web technologies to build desktop apps for Windows, macOS, and Linux!
+
+## How Does it Work?
+
+Let's break it down into simple steps:
+
+1.  **You Have a Web App:** You've already built a website or web app using HTML, CSS, and JavaScript (maybe even React or Next.js!).
+2.  **Electron Takes Over:** You add Electron to your project.
+3.  **The Main File:** You create a special file (usually called `main.js`) that tells Electron what to do. This file creates a window and loads your web app inside it.
+4.  **Your Web App Inside:** Electron opens a window and shows your web app, just like a browser.
+5.  **Desktop Powers:** Electron also lets you use Node.js to do things like:
+    * Access files on your computer.
+    * Show notifications.
+    * Create menus.
+6.  **Building the App:** Electron packages everything together into a downloadable app that you can install on your computer.
+
+## Why Use Electron?
+
+* **Use Your Web Skills:** If you know HTML, CSS, and JavaScript, you can build desktop apps!
+* **Cross-Platform:** Your app can run on Windows, macOS, and Linux.
+* **Powerful Features:** Electron lets you do things that regular websites can't, like accessing files and showing desktop notifications.
+
+## Example (Simple)
+
+Imagine you have a simple HTML file called `index.html`. Here's a very basic `main.js` file that loads it:
+
+```javascript
+const { app, BrowserWindow } = require('electron');
+
+function createWindow() {
+  const win = new BrowserWindow({
+    width: 800,
+    height: 600,
+  });
+
+  win.loadFile('index.html');
+}
+
+app.whenReady().then(createWindow);
+```
