@@ -27,22 +27,19 @@ const Navbar = () => {
                         <li><Link href={'/posts'}>Posts</Link></li> 
                         <li><ModeToggle/></li>
                     </ul>
-                    <div className="hidden md:flex">
+                    <div className='md:hidden flex gap-3'>
+                        <ModeToggle/>
+                        <Hamburger className="flex"/>
+                    </div>
+                    <div className="flex">
                         <SignedOut>
                             <div className='flex gap-5'>
-                                <div className="border font-bold border-cyan-400 dark:border-orange-500/40 py-1 px-2 rounded-md">
-                                    <SignUpButton />
-                                </div>
-                                <div className='dark:bg-white bg-slate-950 text-white dark:text-slate-950 py-1 px-2 rounded-md font-bold'>
+                                <div className='dark:bg-white bg-slate-950 text-white dark:text-slate-950 py-1 px-2 rounded-md text-xs md:font-bold'>
                                     <SignInButton />
                                 </div>
                             </div>
                         </SignedOut>
                         <SignedIn><UserButton /></SignedIn>
-                    </div>
-                    <div className='md:hidden flex gap-3'>
-                        <ModeToggle/>
-                        <Hamburger className="flex"/>
                     </div>
                     
                 </div>
