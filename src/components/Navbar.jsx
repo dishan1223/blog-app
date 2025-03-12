@@ -4,6 +4,14 @@ import ModeToggle from "@/components/DarkLightToggle";
 import Hamburger from './Hamburger';
 import siteConfig from "@/lib/siteConfig"
 
+import {
+    SignInButton,
+    SignUpButton,
+    SignedIn,
+    SignedOut,
+    UserButton,
+} from '@clerk/nextjs'
+
 const Navbar = () => {
     return (
         <header className="w-full py-12 h-14 sticky top-0 border-b border-cyan-400 dark:border-orange-500/40 backdrop-blur-md">
@@ -19,6 +27,19 @@ const Navbar = () => {
                         <li><Link href={'/posts'}>Posts</Link></li> 
                         <li><ModeToggle/></li>
                     </ul>
+                    <div className="hidden md:flex">
+                        <SignedOut>
+                            <div className='flex gap-5'>
+                                <div className="border font-bold border-cyan-400 dark:border-orange-500/40 py-1 px-2 rounded-md">
+                                    <SignUpButton />
+                                </div>
+                                <div className='dark:bg-white bg-slate-950 text-white dark:text-slate-950 py-1 px-2 rounded-md font-bold'>
+                                    <SignInButton />
+                                </div>
+                            </div>
+                        </SignedOut>
+                        <SignedIn><UserButton /></SignedIn>
+                    </div>
                     <div className='md:hidden flex gap-3'>
                         <ModeToggle/>
                         <Hamburger className="flex"/>

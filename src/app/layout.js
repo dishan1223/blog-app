@@ -1,5 +1,10 @@
 import { IBM_Plex_Mono } from 'next/font/google'
 
+// imports for @clerk
+import {
+  ClerkProvider,
+} from '@clerk/nextjs'
+
 // https://next-view-transitions.vercel.app/#demo
 import { ViewTransitions } from 'next-view-transitions'
 
@@ -36,9 +41,10 @@ export const metadata = {
 // Main layout that will be applied to all the pages
 export default function RootLayout({ children }) {
   return (
+    <ClerkProvider>
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${plexMono.className} antialiased dark:bg-[#212737] text-slate-950 dark:text-slate-50`}
+        className={`${plexMono.className} antialiased text-slate-950 dark:text-slate-50`}
       >
         <ViewTransitions>
         <ThemeProvider attribute="class" 
@@ -52,6 +58,7 @@ export default function RootLayout({ children }) {
         </ViewTransitions>
       </body>
     </html>
+    </ClerkProvider>
   );
 }
 
