@@ -15,7 +15,6 @@ import {
     SignedOut,
     SignInButton,
 } from "@clerk/nextjs";
-}
 
 // https://ondrejsevcik.com/blog/building-perfect-markdown-processor-for-my-blog
 
