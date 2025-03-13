@@ -10,6 +10,13 @@ import matter from 'gray-matter'
 import fs from 'fs'
 import path from 'path'
 
+import {
+    SignedIn,
+    SignedOut,
+    SignInButton,
+} from "@clerk/nextjs";
+}
+
 // https://ondrejsevcik.com/blog/building-perfect-markdown-processor-for-my-blog
 
 // components
@@ -38,7 +45,22 @@ export default async function Page({ params }) {
 
     return (
         <MaxWidthWrapper>
+            <SignedIn>
             <div className="prose dark:prose-invert" dangerouslySetInnerHTML={{ __html: htmlContent }} />
+            </SignedIn>
+            <SignedOut>
+                <div className='w-full flex items-center justify-center'>
+                    <div className='flex flex-col gap-6 items-center'>
+                        <div>
+                        <h1>You must be signed in to access this page</h1>
+                        </div>
+                        <div className='px-6 py-2 border-2 border-[#E2E8F0] dark:border-slate-600 rounded-md'>
+                        <SignInButton/>
+                        </div>
+                    </div>
+                </div>
+            </SignedOut>
+
         </MaxWidthWrapper>
     );
 }

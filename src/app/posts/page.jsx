@@ -1,12 +1,19 @@
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { Link } from "next-view-transitions";
 import {getPosts} from "@/lib/posts";
+import {
+    SignedIn,
+    SignedOut,
+    SignInButton,
+} from "@clerk/nextjs";
+
 
 export default function Blogs(){
     const posts = getPosts();
 
 	return (
 		<MaxWidthWrapper>
+            <SignedIn>
 			<div>
 				<p className="dark:text-[#AEB2BB] text-[#525152] ">
 				<Link href="/"><span className="dark:hover:text-white hover:text-slate-950">Home</span>
@@ -36,6 +43,19 @@ export default function Blogs(){
                    ))} 
                 </div>
 			</div>
+            </SignedIn>
+            <SignedOut>
+                <div className='w-full flex items-center justify-center'>
+                    <div className='flex flex-col gap-6 items-center'>
+                        <div>
+                        <h1>You must be signed in to access this page</h1>
+                        </div>
+                        <div className='px-6 py-2 border-2 border-[#E2E8F0] dark:border-slate-600 rounded-md'>
+                        <SignInButton/>
+                        </div>
+                    </div>
+                </div>
+            </SignedOut>
 		</MaxWidthWrapper>
 	)
 }
